@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react';
 import { ArrowUp, Mail } from 'lucide-react';
-import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaGithub } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
