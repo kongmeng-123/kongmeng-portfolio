@@ -5,6 +5,7 @@ import { Mail, Download, Send } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 import { LuShare2 } from 'react-icons/lu';
 import { useTranslation } from 'react-i18next';
+import profileImage from '../assets/image-profile.png'
 
 const Hero = () => {
   const { role } = portfolioData;
@@ -93,7 +94,7 @@ const Hero = () => {
           <div className="relative w-72 h-72 md:w-96 md:h-96">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-2xl opacity-30 animate-pulse" />
             <img
-              src="src/assets/image-profile.png"
+              src={profileImage}
               alt="Profile"
               className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white/10 shadow-2xl"
               onError={(e) => {

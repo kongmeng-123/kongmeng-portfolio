@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react';
 import { ArrowUp, Mail } from 'lucide-react';
-import { FaFacebook, FaGithub} from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
 
         <div className="flex gap-6">
           <SocialLink icon={<FaGithub size={20} />} href="#" />
-          <SocialLink icon={<FaFacebook size={20} />} href="https://www.facebook.com/kongmeng.thor.92" />
+          <SocialLink icon={<FaFacebook size={20} />} href="" />
           <SocialLink icon={<Mail size={20} />} href="#" />
         </div>
 
