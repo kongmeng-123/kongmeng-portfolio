@@ -19,8 +19,8 @@ const Footer = () => {
         </div>
 
         <div className="flex gap-6">
-          <SocialLink icon={<FaGithub size={20} />} href="#" />
-          <SocialLink icon={<FaFacebook size={20} />} href="" />
+          <SocialLink icon={<FaGithub size={20} />} href="https://github.com/kongmeng-123?tab=overview&from=2026-11-01&to=2026-11-11" />
+          <SocialLink icon={<FaFacebook size={20} />} href="https://www.facebook.com/kongmeng.thor.92" />
           <SocialLink icon={<Mail size={20} />} href="#" />
         </div>
 

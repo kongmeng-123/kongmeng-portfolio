@@ -1,6 +1,6 @@
 import { useState, useEffect, type ReactNode } from 'react';
 import { motion } from 'framer-motion';
-import { FaFacebook, FaGithub} from 'react-icons/fa';
+import { FaFacebook, FaGithub } from 'react-icons/fa';
 import { Mail, Download, Send } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 import { LuShare2 } from 'react-icons/lu';
@@ -37,8 +37,8 @@ const Hero = () => {
             </motion.p>
             <h1 className="text-5xl md:text-4xl lg:text-6xl font-bold text-text-main leading-snug">
               <span>
-                 {t('hero.hello')} 
-              </span> 
+                {t('hero.hello')}
+              </span>
               <br />
               <span className="text-primary text-5xl md:text-5xl lg:text-7xl mt-100">{t('hero.my_name')}</span>
             </h1>
@@ -62,10 +62,14 @@ const Hero = () => {
             transition={{ delay: 0.6 }}
             className="flex flex-wrap gap-4"
           >
-            <button className="px-8 py-3 bg-primary text-background font-bold rounded-full hover:bg-primary/90 transition-all flex items-center gap-2 group">
+            <a
+              href={`${import.meta.env.BASE_URL}my-CV.png`}
+              download="my-CV.png"
+
+              className="px-8 py-3 bg-primary text-background font-bold rounded-full hover:bg-primary/90 transition-all flex items-center gap-2 group">
               <Download size={18} className="group-hover:translate-y-1 transition-transform" />
               {t('hero.download_cv')}
-            </button>
+            </a>
             <button className="px-8 py-3 glass text-text-main font-bold rounded-full hover:bg-white/10 transition-all flex items-center gap-2 group">
               <Send size={18} className="group-hover:translate-x-1 transition-transform" />
               {t('hero.contact_me')}
@@ -78,8 +82,8 @@ const Hero = () => {
             transition={{ delay: 0.8 }}
             className="flex gap-6 pt-4"
           >
-            <SocialIcon icon={<FaGithub size={20} />} href="#" />
-            <SocialIcon icon={<FaFacebook size={20} />} href="#" />
+            <SocialIcon icon={<FaGithub size={20} />} href="https://github.com/kongmeng-123?tab=overview&from=2026-11-01&to=2026-11-11" />
+            <SocialIcon icon={<FaFacebook size={20} />} href="https://www.facebook.com/kongmeng.thor.92" />
             <SocialIcon icon={<LuShare2 size={20} />} href="#" />
             <SocialIcon icon={<Mail size={20} />} href="#" />
           </motion.div>
